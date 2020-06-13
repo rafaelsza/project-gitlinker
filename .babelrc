@@ -1,0 +1,11 @@
+{
+    "presets": [
+        "@babel/preset-env"
+    ] // Para dizer ao babel qual ambiente estamos
+    
+    ,
+
+    "plugins": [
+        "@babel/plugin-transform-async-to-generator"
+    ]
+}
