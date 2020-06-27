@@ -1,17 +1,23 @@
 # GitLinker
 
 Projeto desenvolvido para estudo sobre o JS ES6+.</br>
-Basicamente ele busca seus repositórios do GitHub e cria uma lista com os links para o repositório.
 
-Utilizado Babel, Axios, WebPack e WebPack Dev Server.
+Funcionalidade:<br/>
+Buscar seus repositórios do GitHub e criar uma lista com os links para os repositórios.
+
+Utilizado:
+- Babel: para converter código JS ES6+ em código que o navegador consiga interpretar.
+- Axios: para realizar a conexão com a API do GitHub.
+- WebPack: para passar algumas configurações ao Babel.
+- WebPack Dev Server: para criar um servidor local e ficar monitorando alterações no código em tempo real.
+
+Screenshot:
 
 ![alt text](https://github.com/rafaelsza/project-gitlinker/blob/master/screenshots/index.jpg?raw=true)
 
-<h3>Como utilizar em sua máquina:</h3>
+<h3>Para utilizar em sua máquina:</h3>
 
-* Necessário ter <b>node</b> instalado em sua máquina, <a href="https://nodejs.org/en/download/">consulte documentação</a>.<br/>
-
-* Necessário ter <b>yarn</b> instalado em sua máquina, <a href="https://yarnpkg.com/getting-started/install">consulte documentação</a>.<br/>
+<b>* Necessário ter o <a href="https://yarnpkg.com/getting-started/install">yarn</a> e o <a href="https://nodejs.org/en/download/">NodeJS</a> instalados em sua máquina.</b>
 
 Clone o repositório em sua máquina:
 ```
@@ -23,15 +29,7 @@ yarn init
 ```
 Instale as dependências do projeto:
 ```
-yarn add @babel/cli -D
-yarn add @babel/preset-env -D
-yarn add @babel/core -D
-yarn add @babel/polyfill -D
-yarn add webpack webpack-cli -D
-yarn add babel-loader -D
-yarn add webpack-dev-server -D
-yarn add @babel/plugin-transform-async-to-generator -D
-yarn add axios -D
+yarn
 ```
 
 Pronto, agora basta executar em ambiente de desenvolvimento (http://localhost:8080/) com o comando:
@@ -42,6 +40,3 @@ Para criar o arquivo bundle.js e colocar o projeto em modo de produção execute
 ```
 yarn build
 ```
-
-
-
